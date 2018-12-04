@@ -60,9 +60,9 @@ const scrollBehavior = function (to, from, savedPosition) {
 export function createRouter() {
   return new Router({
     mode: 'history',
-    base: '/cable/',
-    linkActiveClass: 'nuxt-link-active',
-    linkExactActiveClass: 'nuxt-link-exact-active',
+    base: '/',
+    linkActiveClass: 'active-link',
+    linkExactActiveClass: 'exact-link',
     scrollBehavior,
 
     routes: [{
