@@ -18,7 +18,7 @@ export default {
   plugins: [
     { src: '~/plugins/swiper.js', ssr: false }
   ],
-  router: { base: '/cable/' },
+  // router: { base: '/cable/' },
   modules: [
     '@nuxtjs/font-awesome',
     ['nuxt-google-maps-module', {

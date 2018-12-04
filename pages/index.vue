@@ -9,13 +9,13 @@
               <nuxt-link to="/" class="header-nav__link">Главная</nuxt-link>
             </li>
             <li class="header__nav-item">
-              <nuxt-link to="catalog" class="header-nav__link">Каталог</nuxt-link>
+              <nuxt-link to="/catalog" class="header-nav__link">Каталог</nuxt-link>
             </li>
             <li class="header__nav-item">
-              <nuxt-link to="about" class="header-nav__link">О нас</nuxt-link>
+              <nuxt-link to="/about" class="header-nav__link">О нас</nuxt-link>
             </li>
             <li class="header__nav-item">
-              <nuxt-link to="contacts" class="header-nav__link">Контакты</nuxt-link>
+              <nuxt-link to="/contacts" class="header-nav__link">Контакты</nuxt-link>
             </li>
           </ul>
         </nav>
@@ -44,6 +44,9 @@
         </div>
         <div class="main-row main-row-ac">
           <h3 class="subtitle">Высококачественные силовые, сигнальные, огнестойкие кабели и кабели связи</h3>
+        </div>
+        <div class="main-btn-wrap">
+          <nuxt-link to="/catalog" class="header-main-btn">Перейти в каталог</nuxt-link>
         </div>
       </div>
     </div>
@@ -139,6 +142,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.main-btn-wrap {
+  text-align: center;
+}
+.header-main-btn {
+  display: inline-block;
+  margin: 60px 0 0;
+  border: 1px solid #df2d2d;
+  border-radius: 3px;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px 20px;
+  transition: .5s;
+  &:hover {
+    background-color: #df2d2d;
+  }
+}
 .title-red {
   color: #df2d2d;
   font-size: 32px;
